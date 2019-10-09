@@ -1,10 +1,10 @@
 package tasks2;
 
 public class Device {
-    String code;
-    String producer;
-    String type;
-    double price;
+    private String code;
+    private String producer;
+    private String type;
+    private double price;
 
     public Device(String code, String producer, String type, double price) {
         this(code, producer, type);

@@ -4,14 +4,7 @@ public class Room {
     private double yardage;
     private int temperature;
     private boolean airConditioner;
-
-    public Room() {
-
-    }
-
-    public Room(double yardage, int temperature, boolean airConditioner){
-
-    }
+    private final int minTemperature = 16;
 
     public double getYardage() {
         return yardage;
@@ -38,12 +31,26 @@ public class Room {
     }
 
     public boolean lowerTemperature(){
-        if (this.airConditioner=true && this.temperature>16) {
-            setTemperature(this.temperature-1);
+        if (airConditioner && temperature>minTemperature) {
+            //setTemperature(temperature-1);
+            temperature -= 1;
             return true;
         } else {
             return false;
         }
+    }
+
+    public String lowerTemperatureAndGetInfo(int getTemp, boolean lowerTemp){
+        return "Zmniejszam temperaturę " + getTemp + " o jeden stopień.\n" +
+               "Czy się udało: " + lowerTemp + ". Aktualna temperatura to " + getTemp;
+    }
+
+    public String getInfo(Room rom){
+        return "Informacje o pomieszczeniu: \n" +
+                "Aktualna temperatura " + rom.getTemperature() +"\n"+
+                "Metraż " + rom.getYardage() +"\n"+
+                "Czy jest klimatyzacja " + rom.isAirConditioner();
+
     }
 
 }
