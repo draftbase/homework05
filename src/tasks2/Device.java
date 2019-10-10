@@ -50,7 +50,7 @@ public class Device {
     }
 
     public String getInfo() {
-        return ("KOD: " + getCode() + ", producent: " + getProducer()
-                + ", typ: " + getType() + ", cena: " + getPrice());
+        return ("KOD: " + code + ", producent: " + producer
+                + ", typ: " + price + ", cena: " + price);
     }
 }

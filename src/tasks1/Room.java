@@ -30,7 +30,7 @@ public class Room {
         this.airConditioner = airConditioner;
     }
 
-    public boolean lowerTemperature(){
+    private boolean lowerTemperature(){
         if (airConditioner && temperature>minTemperature) {
             //setTemperature(temperature-1);
             temperature -= 1;
