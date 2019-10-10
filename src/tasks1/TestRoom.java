@@ -7,13 +7,12 @@ public class TestRoom {
         pom.setTemperature(20);
         pom.setYardage(18);
 
-        System.out.println(pom.getInfo(pom));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-        System.out.println(pom.lowerTemperatureAndGetInfo(pom.getTemperature(),pom.lowerTemperature()));
-
+        System.out.println(pom.getInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
+        System.out.println(pom.lowerTemperatureAndGetInfo());
     }
 }
