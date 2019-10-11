@@ -29,8 +29,7 @@ public class Calculations {
     }
 
     double calculationSection(){
-        return section.length(section.getPoint1().getX(),section.getPoint1().getY()
-                                ,section.getPoint2().getX(),section.getPoint2().getY());
+        return section.length();
     }
     boolean trianglePoints(double a, double b, double c){
         return a<b+c && b<a+c && c<b+a &&

@@ -41,15 +41,15 @@ public class Room {
     }
 
     public String lowerTemperatureAndGetInfo(){
-        return "Zmniejszam temperaturę " + getTemperature() + " o jeden stopień.\n" +
-               "Czy się udało: " + lowerTemperature() + ". Aktualna temperatura to " + getTemperature();
+        return "Zmniejszam temperaturę " + temperature + " o jeden stopień.\n" +
+               "Czy się udało: " + lowerTemperature() + ". Aktualna temperatura to " + temperature;
     }
 
     public String getInfo(){
         return "Informacje o pomieszczeniu: \n" +
-                "Aktualna temperatura " + getTemperature() +"\n"+
-                "Metraż " + getYardage() +"\n"+
-                "Czy jest klimatyzacja " + isAirConditioner();
+                "Aktualna temperatura " + temperature +"\n"+
+                "Metraż " + yardage +"\n"+
+                "Czy jest klimatyzacja " + airConditioner;
 
     }
 
